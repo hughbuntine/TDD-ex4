@@ -11,6 +11,7 @@ export class Shop {
     this.items = items;
   }
 
+  // This is the one that passed all the coverage tests
   updateQualityOld() {
     for (var i = 0; i < this.items.length; i++) {
       if (this.items[i].name != "Aged Brie" && this.items[i].name != "Backstage passes to a TAFKAL80ETC concert") {
@@ -59,7 +60,7 @@ export class Shop {
     }
 
     return this.items;
-  }
+  }  
 
   updateQuality() {
     for (var i = 0; i < this.items.length; i++) {
